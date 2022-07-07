@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Maqueta Proyecto</a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="grey-text fab fa-facebook-square fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="grey-text fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="grey-text fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
+    <div class="card mat-card" id="first-card">
+      <div id="profile-background"><img id="info-back-img" src="img/lencois.jpg"></div>
+        <div id="info" style="padding: 16px">
+        
+        <div id="info-img">
+            <img id="info-user-img" class="profile-image" src="img/Paula.jpg">
+           
+        <div id="info-data">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditProfileModal()"></i></a></div>
+        </div>
+            <div>
+             <i><h1 id="info-name">Paula de Camargo Rangel e Lisboa da Costa</h1></i>
+             <i><span id="info-ubication">Granadero Baigorria-Rosário-Argentina </span></i>
+            </div>
+        </div>
+        <div id="info-actions">
+           <button type="button" class="btn btn-outline-warning">Datos Personales</button>
+           <button type="button" class="btn btn-outline-warning">Datos de Contacto</button>
+           <button type="button" class="btn btn-outline-warning">Referencias</button>
+        </div>  
+      </div>
+    </div>
+    <div class="card mat-card">
+        <div class="card-titles">
+              <u><h3>Acerca de Mí</h3></u>
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditAboutModal()"></i></a></div>
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash"onclick="deleteAbout('Pixar')"></i></a></div>
+            </div>    
+            <div id="about">
+               <h4>Soy una persona dinámica, activa, responsable y con facilidad para relacionarme en grupo.
+                Busco una oportunidad de trabajo como Desarrollador Web Full Stack</h4>
+            </div>
+        </div>
+
+                <div class="card mat-card">
+               <div class="card-titles">
+              <div id="experience">
+               <u><i><h3>Experiencia Profisional</h3></i></u>
+                  <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewExpModal()"></i></a></div>
+                  <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash"onclick="deleteExp('Pixar')"></i></a></div>
+                     <ul class="items-list" id="expList"></ul>
+                     <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+                     <p><img style="float: left" src="img/Claro.jpg" weidth="120" height="120"></p>
+                     <h3>Claro</h3>
+                     <p></p>
+                     <u><h4>Vendedora</h4></u> 
+                     <h5>Venta de celulares, accesorios.</h5>
+                     <h5>Control de caja, pago de facturas y otras actividades administrativas.</h5>
+                        
+            <div class="card-titles">
+              <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+              <ul class="items-list" id="expList"></ul>
+              <p><img style="float: left"src="img/Casa da cultura.jpg"weidth="120" height="120"></p>
+              <h3>Centro Cultural Cholo Montironi</h3>
+              <p></p>
+              <u><h4>Profesora</h4></u>
+              <h5>Desarrollo de clases de italiano para adultos, principiantes.</h5>
+                        
+            <div class="card-titles">
+              <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+              <ul class="items-list" id="expList"></ul>   
+              <p><img style="float: left" src="img/Guia.png"weidth="120" height="120" alt=""></p>
+              <h3>Guia de Turismo</h3>
+              <p></p>
+              <u><h4>Autonomo</h4></u>
+              <h5>Coordinadora, supervisora de grupos turísticos.</h5>
+             
+              <div class="card-titles">
+                    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+              <ul class="items-list" id="expList"></ul>
+              <p><img style="float: left"src="img/Sao Leopoldo.jpg"weidth="120" height="120"></p>
+              <h3>Facultad São Leopoldo Mandic</h3>
+              <p></p>
+              <u><h4>Analista administrativa</h4></u>
+              <h5>Controle, compras y presupuestos, cuentas por pagar, controles de EPP de los
+              funcionarios y supervisor de los servicios generales y mantenimiento del inventario. Monitoreo de procesos 
+              de mantenimiento y verificación de facturas.</h5>   
+              
+               <div class="card-titles">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+                <ul class="items-list" id="expList"></ul>
+                <p><img style="float: left"src="img/MSC.jpg"weidth="120" height="120"></p>
+                <h3>MSC Cruceros</h3>
+                <p></p>
+                <u><h4>Recepcionista Trilingüe</h4></u>
+                <h5>Check-in y Check-out de pasajeros de diferentes nacionalidades, solución de problemas 
+                relacionados con cabinas de pasajeros, paquetes y otras necesidades. Actualización de la información en el 
+                sistema de visas en pasaportes y otras funciones relacionadas con servicios de calidad.</h5>
+
+               <div class="card-titles">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+                <ul class="items-list" id="expList"></ul>
+                <p><img style="float: left"src="img/IBM.png"weidth="120" height="120"></p>
+                <h3>IBM Brasil</h3>
+                <p></p>
+                <u><h4>Analista de soporte de ventas</h4></u>
+                <h5>Apoyo a las operaciones de comercialización de software para África, Europa y el Oriente 
+                Medio (EMEA), documentos de la Conferencia en sistemas SAP y base de datos de Lotus Notes.</h5>
+
+              <div class="card-titles">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+                <ul class="items-list" id="expList"></ul>
+                <p><img style="float: left"src="img/Passaredo.png"weidth="120" height="120"></p>
+                <h3>Passaredo Linhas Aéreas</h3>
+                <p></p>
+                <u><h4>Agente de aeropuerto</h4></u>
+                <h5>Informes de facturación, emisión de recibos, reservas y venta de pasajes aéreos.</h5>   
+                
+              <div class="card-titles">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewExpModal()"></i></a></div>
+                <ul class="items-list" id="expList"></ul>
+                <p><img style="float: left"src="img/Luzeiros.png"weidth="120" height="120"></p>
+                <h3>Hotel Luzeiros São Luis</h3>
+                <p></p>
+                <u><h4>Administración de reservas</h4></u>
+                <h5>Propuestas de intermediación para la celebración de lealtad corporativa; suministro de 
+                información a los socios, tales como CVC y Booking.com; seguimiento de reserva en línea.</h5>  
+
+           </div>
+           </div>
+                
+            <div class="card-titles">
+                 <div id="education">
+                  
+                  <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewEduModal()"></i></a></div>
+                  <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash"onclick="deleteEdu('Pixar')"></i></a></div>
+                  <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewEduModal()"></i></a></div>    
+                  <p></p>
+                  <p><u><h3>Educación</h3></u></p>
+                  <img style="float: left" src="img/Argentina Programa.png"weidth=120px height=120px>
+                  <u><h4>Desarrollador Full Stark Junior</h4></u>
+                  <h5>Argentina Programa</h5>
+                  <h5>Desde 03/2022 Hasta: Actualidad</h5>
+                  <p></p>
+                                
+            <div class="card-titles">
+              <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewEduModal()"></i></a></div>
+               <img style="float: left" src="img/PucCampinas.png" weidth=120px height=120px >
+                <u><h4>Licenciatura en Turismo</h4></u>
+                <h5> Pontificia Universidad Católica de Campinas</h5>
+                <h5>Incompleto</h5>
+                <p></p>
+                        
+            
+            <div class="card-titles"> 
+              <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewEduModal()"></i></a></div>
+               <img style="float: left" src="img/Delta.jpg" weidth=120px height=120px>        
+              <u><h4>Azafata</h4></u>
+              <h5>Delta Escola de Aviacion</h5> 
+              <h5>Graduada: 12/2012</h5> 
+              <p></p> 
+                        
+      
+              <div class="card-titles"> 
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewEduModal()"></i></a></div>
+                 <img style="float: left" src="img/Idiomas.png" weidth=120px height=120px>        
+                <u><h4>Habilidades</h4></u>
+                <h5>Portugués nativo; italiano avanzado; inglés avanzado; español avanzado</h5>
+                <h5>Dominio en herramientas de micro computación y sistemas ERP.</h5>
+                <p></p>      
+           
+                       
+                      </div>
+                      <h5>Uso de Keywords</h5>
+                      <img style="float: left" src="img/Git.png" weidth=50px height=50px>    
+                      <a href="https://github.com/paularangelc" target="_blank" >GitHub</a>
+                      <p></p>
+
+                      <img style="float: left" src="img/Linkedin.png" weidth=50px height=50px>
+                      <a href="https://www.linkedin.com/in/paularangelc/" target="_blank" >LinkedIn</a>
+                      <p></p>
+
+                      <img style="float: left" src="img/Facebook.png" weidth=50px height=50px>
+                      <a href="https://www.facebook.com/paularangelc/" target="_blank" >Facebook</a>
+                      <p></p>
+
+                    <u><h3></h3></u>
+                    <img src="img/FrontEnd.png"weidth=100 height=100>
+                    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewEduModal()"></i></a></div> 
+                        <h5>Estructuras: HTML</h5>
+                        <h5>Estilos:CSS</h5>
+                        <h5>Lenguajes de programación: JavaScript;Typescript</h5>
+                        <h5>Framework: Boostrap; Angular</h5>
+                        <p></p>
+                    <u><h3></h3></u>
+                   <img src="img/BackEnd.png"weidth=100  height=100>
+                   <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showNewEduModal()"></i></a></div> 
+                       <h5>Base de datos: MySQL</h5>
+                       <h5>Lenguaje: Java</h5>
+                       <h5>Framework:Spring Boot</h5>
+                       <h5>Web Server: Apache Tomcat</h5>
+                   </div>
+                </div>
+              </div> 
+            </div> 
+          <i><footer><h6>Paula Rangel@2022</h6></footer></i>    
+    </body>
+</html>
